@@ -1,0 +1,59 @@
+.FotosSobre{
+    width: 100vw;
+    background-color: black;
+    border-bottom: gray solid;
+}
+.FotosSobre img{
+    opacity: 0.3;
+    height: 80vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.textos h1{
+    text-align: justify;
+    text-align: center;
+    display: flex;
+    color: white;
+    position: absolute;
+    font-size: 3rem;
+    z-index: 1;
+    left: 50%; /* Adiciona 50% do width da tela ao ponto de origem à esquerda */
+    transform: translateX(-50%); /* Move metade da largura do próprio elemento para a esquerda */
+    top: 30vh;
+    width: 60%;
+} 
+.textos p{
+    display: flex;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    top: 50vh;
+    width: 100vw;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width:900px) {
+    .textos h1{
+        font-size: 2rem;
+        z-index: 1;
+        top: 25vh;
+        width: 80%;
+    } 
+    .textos p{
+        width: 100vw;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:1246px) {
+    .textos h1{
+        top: 25vh;
+        width: 80%;
+    } 
+    .textos p{
+        top: 60vh;
+        width: 100vw;
+    }
+}

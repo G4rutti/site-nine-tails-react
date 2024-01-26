@@ -1,0 +1,83 @@
+.conteudoPrincipal{
+    position: relative;
+    top: 11vh;
+    margin-bottom: 20vh;
+    min-height: 60vh;
+}
+
+.origem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.cima{
+    margin: auto;
+    display: flex;
+    width: 80vw;
+}
+
+.imagemRI{
+    width: 35vw;
+    height: auto;
+    -webkit-box-shadow: 0px 6px 21px -7px rgba(0,0,0,1);
+-moz-box-shadow: 0px 6px 21px -7px rgba(0,0,0,1);
+box-shadow: 0px 6px 21px -7px rgba(0,0,0,1);
+}
+
+.direita{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+.direita p{
+    padding-left: 3vw;
+    margin: 0;
+    font-size: 1rem;
+}
+.baixo ul{
+    position: relative;
+    top: 5vh;
+    justify-content: center;
+    width: 40vw;
+}
+.sessaoCardsWithImageCap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:900px) {
+    .baixo{
+        display: none;
+    }
+    .cima{
+        flex-direction: column;
+    }
+    .direita p{
+        margin-bottom: 10vh;
+    }
+}
+
+@media screen and (max-width:1246px) {
+    .cima{
+        flex-direction: column;
+    }
+    .baixo ul{
+        padding: 0;
+        justify-content: space-around;
+        position: inherit;
+        margin-bottom: 5vh;
+        width: 80vw;
+    }
+    .imagemRI{
+        width: 80vw;
+        margin-bottom: 5vh;
+    }
+    .direita p{
+        padding: 0;
+        width: 80vw;
+        text-align: justify;
+        margin-bottom: 5vh;
+    }
+}

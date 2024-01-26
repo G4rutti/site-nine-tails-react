@@ -1,0 +1,13 @@
+.conteudoPrincipal{
+    position: relative;
+    top: 11vh;
+    margin-bottom: 20vh;
+    min-height: 60vh;
+}
+
+
+@media (max-width: 900px) {
+    .conteudoPrincipal{
+        top: 9vh;
+    }
+}

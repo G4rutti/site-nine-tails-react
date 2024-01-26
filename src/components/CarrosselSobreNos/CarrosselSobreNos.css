@@ -1,0 +1,21 @@
+.carousel.slide.carousel-fade.alterarTamanho{
+    width: 40vw;
+}
+
+.carousel-inner.imagens img{
+    width: 40vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media screen and (max-width:900px) {
+    .carousel.slide.carousel-fade.alterarTamanho{
+        width: 80vw;
+    }
+    
+    .carousel-inner.imagens img{
+        width: 80vw;
+        object-fit: cover;
+        object-position: center;
+    }
+}

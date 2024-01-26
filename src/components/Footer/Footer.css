@@ -1,0 +1,146 @@
+footer{
+    width: 100%;
+    height: 45%;
+    background-color: #9E19B8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+#youtube{
+    background-color: red;
+}
+#youtube i{
+    color: white;
+}
+#tiktok{
+    background-color: black;
+}
+#tiktok i{
+    color: white;
+}
+#instagram{
+    background-color: #632718;
+    justify-content: center;
+}
+#instagram i{
+    display: flex;
+    color: white;
+}
+#twitter{
+    background-color: lightblue;
+}
+#twitter i{
+    color: white;
+}
+
+
+
+.socialMedia{
+    display: flex;
+    padding: 0;
+}
+.socialMedia li{
+    cursor: pointer;
+    transition: transform 1s;
+    display: flex;
+    margin: 1vw;
+    padding: 1vw;
+    border-radius: 50px;
+}
+
+.faleConosco ul li i{
+    font-size: var(--icon-size,2vw);
+}
+.faleConosco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tiposDeContatos{
+    margin: 2vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+iframe{
+    border-radius: 20px;
+}
+.type{
+    margin: 2vw;
+    text-align: center;
+}
+.title{
+    font-size: 1.5rem;
+}
+
+.contacts ul{
+    margin: 0;
+    padding: 0;
+}
+.contacts ul li a{
+    color: rgb(74, 0, 97);
+}
+
+@media (max-width: 900px) {
+    footer{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .faleConosco ul li i{
+        font-size: var(--icon-size,10vw);
+    }
+    .socialMedia{
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+        padding: 0;
+    }
+    .socialMedia li{
+        cursor: pointer;
+        transition: transform 1s;
+        display: flex;
+        margin: 3vw;
+        padding: 3vw;
+        border-radius: 50px;
+    }
+    .socialMedia ul{
+        width: 80vw;
+    }
+    .type{
+        width: 80vw;
+        /* topo | direita | inferior | esquerda */
+        margin: 2vh auto 2vh auto;
+
+    }
+    .localizacao{
+        /* topo | direita | inferior | esquerda */
+        margin: 0 auto 2vh auto;
+    }
+
+    .faleConosco{
+        margin-bottom: 0;
+    }
+    .tiposDeContatos{
+        width: 80vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .contatos{
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .contacts div{
+        margin-bottom: 4vh;
+    }
+    iframe{
+        width: 80vw;
+    }
+}
+

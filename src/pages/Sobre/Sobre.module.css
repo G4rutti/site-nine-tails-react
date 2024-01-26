@@ -1,0 +1,55 @@
+.conteudoPirncipal{
+    position: relative;
+    min-height: 60vh;
+    top: 11vh;
+}
+
+.carrossel{
+    align-items: center;
+    margin: auto;
+    display: flex;
+    width: 80vw;
+    margin-bottom: 15vh;
+}
+
+.texto{
+    text-align: justify;
+    width: 30vw;
+    margin-left: 5vw;   
+}
+.texto p{
+    font-size: 1.1em;
+}
+
+.torneiosDisputados{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20vh;
+}
+.torneiosDisputados div{
+    /* topo | direita | inferior | esquerda */
+    margin: 0 2vw auto 2vw;
+    
+}
+
+@media screen and (max-width:900px) {
+    .conteudoPirncipal{
+        position: relative;
+        min-height: 60vh;
+        top: 0vh;
+    }
+    .torneiosDisputados{
+        flex-direction: column;
+    }
+    .carrossel{
+        flex-direction: column;
+    }
+    .texto{
+        margin-left: 0;
+        margin-top: 5vh;
+        width: 80vw;
+    }
+}
