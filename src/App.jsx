@@ -9,7 +9,7 @@ import Footer from "./components/Footer/Footer.jsx"
 const Home = react.lazy(() => import('./pages/Home/Home.jsx'))
 const OurRobots = react.lazy(() => import('./pages/OurRobot/OurRobot.jsx'))
 const Sobre = react.lazy(() => import('./pages/Sobre/Sobre.jsx'))
-// import home from './pages/Home/Home.jsx'
+// import Home from './pages/Home/Home.jsx'
 // import OurRobots from './pages/OurRobot/OurRobot.jsx'
 // import Sobre from './pages/Sobre/Sobre.jsx'
 
