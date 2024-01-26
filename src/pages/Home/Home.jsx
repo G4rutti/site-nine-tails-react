@@ -1,19 +1,21 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 
 // Fotos:
+// const FotoRookieInspiration = lazy(() => import('../../assets/images/fotoEquipe/2023/rookieInspiration.jpg'))
 import FotoRookieInspiration from "../../assets/images/fotoEquipe/2023/rookieInspiration.jpg"
 
 // Components:
-import FotoEquipe from "../../components/FotoEquipe/FotoEquipe.jsx"
-import DivisaoDeSecao from '../../components/DivisaoDeSecao/DivisaoDeSecao.jsx'
-import Banner from '../../components/Banner/Banner.jsx'
-import CardWithImageCap from '../../components/CardWithImageCap/CardWithImageCap.jsx'
+const FotoEquipe = lazy(() => import("../../components/FotoEquipe/FotoEquipe.jsx"))
+const DivisaoDeSecao = lazy(() => import('../../components/DivisaoDeSecao/DivisaoDeSecao.jsx'))
+const Banner = lazy(() => import('../../components/Banner/Banner.jsx'))
+const CardWithImageCap = lazy(() => import('../../components/CardWithImageCap/CardWithImageCap.jsx'))
 
 import  styles  from'./Home.module.css'
 
 const Home = () => {
+  
   return (
-    <>
+    <Suspense fallback={<div>Carregando...</div>}>
       <main className={styles.conteudoPrincipal}>
         <FotoEquipe/>
         <DivisaoDeSecao frase="Nossa Origem"/>
@@ -37,10 +39,12 @@ const Home = () => {
         </div>
         <DivisaoDeSecao frase="Áreas de atuação"/>
         <div className={styles.sessaoCardsWithImageCap}>
-          <CardWithImageCap/>
+          <Suspense fallback={<div>Carregando...</div>}>
+            <CardWithImageCap/>
+          </Suspense>
         </div>
       </main>    
-    </>
+    </Suspense>
   )
 }
 

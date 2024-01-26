@@ -11,6 +11,13 @@ const TopContent = () => {
         setMobileMenuOpen(!isMobileMenuOpen);
     };
 
+    const voltarTudo = () => {
+        setMobileMenuOpen(!isMobileMenuOpen)
+        useEffect(() => {
+            window.scrollTo(0, 0)
+        }, [])
+    }
+
     return (
         <header>
             <div className="header-container">
@@ -22,9 +29,9 @@ const TopContent = () => {
                         <div className="bar"></div>
                     </div>
                     <div className="nav-links">
-                        <NavLink to="/">Página Inicial</NavLink>
-                        <NavLink to="/sobre">Sobre</NavLink>
-                        <NavLink to="/NossosRobos">Robôs</NavLink>
+                        <NavLink to="/" onClick={voltarTudo}>Página Inicial</NavLink>
+                        <NavLink to="/sobre" onClick={voltarTudo}>Sobre</NavLink>
+                        <NavLink to="/NossosRobos" onClick={voltarTudo}>Robôs</NavLink>
                     </div>
                 </nav>
             </div>
