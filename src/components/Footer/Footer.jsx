@@ -7,12 +7,12 @@ const BottomContent = () => {
             <h2 className="title">Fale Conosco</h2>
             <ul className="socialMedia">
                 <div className="ladoUm">
-                    <li id="tiktok"><a href="https://www.tiktok.com/@ninetailsfrc" target="_blank"><i className="fa-brands fa-tiktok"></i></a></li>
-                    <li id="twitter"><a href="https://twitter.com/ninetails9219" target="_blank"><i className="fa-brands fa-twitter"></i></a></li>
+                    <li id="tiktok"><a href="https://www.tiktok.com/@ninetailsfrc" target="_blank" rel="noreferrer"><i className="fa-brands fa-tiktok"></i></a></li>
+                    <li id="twitter"><a href="https://twitter.com/ninetails9219" target="_blank" rel="noreferrer"><i className="fa-brands fa-twitter"></i></a></li>
                 </div>
                 <div className="ladoDois">
-                    <li id="youtube"><a href="https://www.youtube.com/@ninetails9219" target="_blank"><i className="fa-brands fa-youtube" ></i></a></li>
-                    <li id="instagram"><a href="https://www.instagram.com/ninetails9219/" target="_blank"><i className="fa-brands fa-instagram" ></i></a></li>
+                    <li id="youtube"><a href="https://www.youtube.com/@ninetails9219" target="_blank" rel="noreferrer"><i className="fa-brands fa-youtube" ></i></a></li>
+                    <li id="instagram"><a href="https://www.instagram.com/ninetails9219/" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram" ></i></a></li>
                 </div>
             </ul>
         </section>
@@ -27,13 +27,11 @@ const BottomContent = () => {
                         <h3 className="title">Contato</h3>
                         <ul>
                             <li><a href="mailto:ninetails9219@gmail.com">ninetails9219@gmail.com</a></li>
-                            <li><a href="tel:+5524992209569">Vinicios: (24)99220-9569</a></li>
-                            <li><a href="tel:+5524992828936">Rebeca: (24)99282-8936</a></li>
                         </ul>
                     </div>
                     <div className="type">
                         <h3 className="title">Horário</h3>
-                        <p>Segunda a Sábado das 08:00 as 17:00</p>
+                        <p>Segunda a Sábado das 08:00 às 17:00</p>
                     </div>
                 </div>
             </div>

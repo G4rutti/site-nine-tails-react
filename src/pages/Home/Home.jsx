@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react'
+import { lazy, Suspense } from 'react'
 
 // Fotos:
 // const FotoRookieInspiration = lazy(() => import('../../assets/images/fotoEquipe/2023/rookieInspiration.jpg'))
