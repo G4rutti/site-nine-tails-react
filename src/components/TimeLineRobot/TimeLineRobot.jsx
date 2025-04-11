@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import TankTails from '../../assets/images/robo/tankTails.jpg';
 import TheAnswer from '../../assets/images/robo/theAnswer.jpg';
 import Arak from '../../assets/images/robo/arak.jpg';
-import Predator from '../../assets/images/robo/predator.jpg';
-import Garuttinho from '../../assets/images/robo/garuttinho.jpg';
+import Predator from '../../assets/images/robo/predator.JPG';
+import Garuttinho from '../../assets/images/robo/garuttinho.JPG';
 
 const TimeLineRobot = () => {
   return (
